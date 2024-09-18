@@ -1,0 +1,8 @@
+This project was developed in a one month React course, at ORT University.
+
+The objective of the project was to make a web page using React and Redux, with the back-end connected to an API. 
+The web page consists in creating a tool for census takers that allows them to:
+Register themselves in, and once they're logged into the system, register their census participants with their data, search for their participants, filtering them based on their occupation, with the option of deleting them.
+Also, the census taker can also see the statistics of their participants, visualizing a graphic that shows how many participants they have registered in each region of Uruguay.
+
+The project was made individually and graded 96/100.
