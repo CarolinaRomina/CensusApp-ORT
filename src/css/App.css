@@ -1,0 +1,20 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f5de;
+}
+
+#root{
+  height: 100%;
+}
+
+.app-container{
+  height: 100%;
+}
+/* 
+--text: #f7f5de;
+--background: #414a53;
+--primary: #d09fad;
+--secondary: #ebd0b2;
+--accent: #b77185; */

@@ -1,0 +1,192 @@
+/* FONTS: */
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* Arsenal SC */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    align-items: center;
+}
+
+#container-menu{
+    display: flex;
+    flex-direction: row;
+    background-color: #CF9EAC;
+    height: 10%;
+    width: 100%;
+}
+
+#container-nav-not-logged-in, #container-nav-logged-in{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+#container-title-nav-not-logged-in, #container-title-nav-logged-in{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    color: #f7f5de;
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    width: 25%;
+    justify-content: center;
+}
+
+#container-hamburguer-menu-open, #container-hamburguer-menu-closed{
+    display: none;
+}
+
+#nav-not-logged-in, #nav-logged-in{
+    height: 10%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+}
+
+#nav-not-logged-in ul, #nav-logged-in ul{
+    list-style-type: none;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#nav-not-logged-in li, #nav-logged-in li{
+    display: flex;
+    gap: 3em;
+    width: 100%;
+    justify-content: center;
+}
+
+#nav-not-logged-in a, #nav-logged-in a{
+    text-decoration: none;
+    color: #faf9f0;
+    font-family: 'Arsenal SC';
+    transition: color 0.2s ease-in; 
+    font-weight: 600;
+}
+
+.active, nav a:hover{
+    color: #A9808A;
+    text-shadow: 1px 1px #3f292be3; 
+}
+
+@media (orientation: portrait){
+
+    #nav-not-logged-in, #nav-logged-in{
+        display: none;
+    }
+
+    #container-hamburguer-menu-closed, #container-hamburguer-menu-open{
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        right: 10%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #container-hamburguer-menu-closed{
+        height: 100%;
+        position: relative;
+    }
+
+    #container-hamburguer-menu-open{
+        height: 100%;
+        position: relative;
+    }
+
+    #container-icon-hamburguer-open, #container-icon-hamburguer-closed{
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-icon-hamburguer-closed{
+        height: 100%;
+        width: 100%;
+    }
+
+    #container-icon-hamburguer-open{
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    
+    #container-icon-hamburguer-open svg, #container-icon-hamburguer-closed svg{
+        display: flex;
+    }
+
+    #container-icon-hamburguer-closed svg{
+        width: 50%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-icon-hamburguer-open svg{
+        width: 50%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    #menu-options-hamburguer-menu{
+        position: absolute;
+        top: 100%;
+        height: 200%;
+        width: 150%;
+        background-color: #f7f5de;
+        box-shadow: 0.2em 0.2em #c7c4a1e7;
+        border-radius: 1em;
+    }
+
+    #nav-not-logged-in-HM, #nav-logged-in-HM{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    #nav-not-logged-in-HM ul, #nav-logged-in-HM ul{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nav-not-logged-in-HM li, #nav-logged-in-HM li{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #nav-not-logged-in-HM a, #nav-logged-in-HM a{
+        text-decoration: none;
+        font-family: 'Arsenal SC';
+        font-weight: 600;
+        color: #B77185;
+    }
+
+
+
+    #container-title-nav-not-logged-in, #container-title-nav-logged-in{
+        width: 80%;
+        margin-left: 1em;
+    }
+    
+}

@@ -1,0 +1,22 @@
+#container-dashboard{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#container-title-dashboard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 50%;
+    margin-top: 1em;
+    background-color: #3f292be3;
+}
+
+#title-dashboard{
+    color: #f7f5de;
+    text-align: center;
+}

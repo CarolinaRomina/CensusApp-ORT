@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Playfair+Display&family=Quicksand:wght@300&display=swap');
+
+#containerNav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+nav{
+    background-color: #AA4465;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#navNotLoggedIn{
+    gap: 5%;
+}
+
+a{
+    text-decoration: none;
+    color: #EDF0DA;
+    font-family: 'Quicksand', sans-serif;
+}

@@ -1,0 +1,214 @@
+#container-dashboard
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-title-dashboard
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    margin-top: 1em;
+    background-color: #3f292be3;
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
+
+#title-dashboard
+{
+    color: #f7f5de;
+    text-align: center;
+}
+
+#dashboard-container-1
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    height: 70%;
+}
+
+#container-addParticipant
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    flex-direction: column;
+    height: 100%;
+}
+
+#container-title-AddParticipant
+{
+    display: flex;
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-addParticipant
+{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form-addParticipant
+{
+    font-family: 'Nunito';
+    font-weight: 300;
+}
+
+
+#container-inputParticipantName, #container-selectDepartamento, #container-selectCiudad,
+#container-birthdate-AddParticipant, #container-ocupation, #container-addParticipant-btn
+{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#selectDepartamento, #selectCiudad, #inputOcupation, 
+#ParticipantName, #inputBirthdateParticipant
+{
+    height: 100%;
+    text-align: center;
+    border-width: 0px !important;
+    padding: 0px !important;
+    font-family: 'Nunito';
+    font-weight: 600;
+    color:#CF9EAC;
+    border-radius: 1em;
+}
+
+#ParticipantName, #selectDepartamento, #selectCiudad, #inputOcupation, #inputBirthdateParticipant
+{
+    width: 80%;
+}
+
+#container-message-AddParticipant
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+
+#addParticipant-message
+{
+    height: 100%;
+}
+
+#container-ParticipantList
+{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    height: 100%;
+    align-items:center;
+    gap: 1em;
+    justify-content: center;
+}
+
+#container-title-participants
+{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    justify-content: center;
+    width: 100%;
+}
+
+#container-title-participants, #container-title-AddParticipant
+{
+    font-family: "Lora", serif;
+}
+
+input[type="text"]:focus, select:focus, input[type="date"]:focus
+{
+    background-color: #f7f5de;
+    outline: none;
+}
+
+#select-participant-ocupation:focus
+
+#select-participant-ocupation
+{
+    text-align: center;
+    height: 50%;
+    font-family: 'Nunito';
+    font-weight: 600;
+    color:#CF9EAC;
+    border-radius: 1em;
+    margin-left: 1em;
+}
+
+#container-table
+{
+    display: flex;
+    overflow: scroll;
+    width: 100%;
+    height: 65%;
+    justify-content: center;
+}
+
+table
+{
+    width: 100%;
+    font-family: 'Nunito';
+    font-weight: 600;
+}
+
+th 
+{
+    text-align: center; 
+    background-color: #CF9EAC;
+    color: #f7efda;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #CF9EAC;
+}
+
+table, th, td 
+{
+    border: 1px solid #CF9EAC;
+}
+
+tr 
+{
+    margin-bottom: 10px;
+}
+
+#container-addParticipant, #container-ParticipantList
+{
+    background-color: #3f292be3;
+    border: 0.2em;
+    border-style: outset;
+    border-color: #CF9EAC;
+    color: #f7f5de;
+}
+
+
+

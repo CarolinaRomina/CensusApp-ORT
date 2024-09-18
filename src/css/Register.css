@@ -1,0 +1,218 @@
+/* FONTS: */
+/* Lora */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* Nunito */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+#container-register{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    padding: 2%;
+    background-color: #3f292be3;
+    gap: 8%;
+    border-style: groove;
+    border-color: #B77185;
+}
+
+#container-form-reg{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    width: 100%;
+}
+
+#form-register{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+}
+
+#title-register{
+    font-family: "Lora", serif;
+    font-weight: 600;
+    color: #CF9EAC;
+}
+
+.label-register{
+    font-family: 'Nunito';
+    font-weight: 300;
+    color: #f7f5de;
+    height: 50%;
+    font-size: 100%;
+}
+
+.input-register{
+    border-style: solid;
+    border-color: #f7f5de;
+    border-radius: 1em;
+    font-family: 'Nunito';
+    font-weight: 300;
+}
+
+.input-register[type=text], #password-reg{
+    font-size: 80%;
+    color:#CF9EAC;
+    font-weight: 600;
+    width: 50%;
+    height: 50%;
+    background-color: #f7f5de;
+    justify-content: center;
+    transition: border-color 0.3s ease-in, border-style 0.3s ease-in;
+}
+
+.input-register[type=text]:focus, #password-reg:focus, .input-register[type=text]:hover, #password-reg:hover{
+    background-color: #ffffff;
+}
+
+.input-register[type=text]:focus, #password-reg:focus{
+    outline: none;
+}
+
+
+.input-register[type=button]{
+    align-items: center;
+    display: flex;
+    font-family: "Lora", serif;
+    font-size: 70%;
+    font-weight: 500;
+    color: #f7f5de;
+    width: 35%;
+    border-color: #826369;
+    border-style: double;
+    background-color:  #A9808A;
+    height: 60%;
+    justify-content: center;
+    transition: color 0.5s ease-in, font-weight 900 ease-in;
+}
+
+.input-register[type=button]:hover{
+    cursor: pointer;
+    border-style: solid;
+    color: #ffffff;
+    font-weight: 900;
+}
+
+#container-title-reg, #container-username-reg, #container-password-reg, #container-button-reg, #password-field-reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+
+#container-title-reg{
+    height:30%; 
+    font-size: 80%;
+}
+
+#container-username-reg, #container-password-reg{
+    height: 25%;
+}
+
+#username-field-reg, #password-field-reg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    position:relative;
+}
+
+#container-button-reg{
+    height: 20%;
+    width: 100%;
+}
+
+#container-img-eye-reg{
+    display: flex;
+    position:absolute;
+    top: 50%;
+    right: 27%;
+    cursor: pointer;
+    font-size: 70%;
+    transform: translateY(-50%);
+    align-items: center;
+}
+
+#container-message-reg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito';
+    font-size: 80%;
+    color: #fffbde;
+    height: 10%;
+    width: 100%;
+}
+
+#container-login-redirect{
+    display: flex;
+    gap: 1%;
+    height: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#message-login-redirect, #link-login-redirect{
+    color: #f7f5de;
+    font-family: 'Nunito';
+    font-size: 100%;
+}
+
+#link-login-redirect{
+    text-decoration: none;
+}
+
+#link-login-redirect:hover{
+    color: #ffffff;
+}
+
+@media (orientation: portrait){
+
+    #container-register{
+        width: 80%;
+        height: 80%;
+        gap: 2%;
+    }
+
+    .label-register{
+        font-size: 100%;
+        height: 30%;
+    }
+
+    #container-title-reg{
+        font-size: 100%;
+    }
+
+    .input-register[type=text], #password-reg{
+        height: 70%;
+        width: 80%;
+        font-size: 100%;
+    }
+
+    .input-register[type=button]{
+        width: 70%;
+        height: 50%;
+        font-size: 80%;
+    }
+
+    .input-register[type=button]:hover{
+        width: 80%;
+        height: 55%;
+    }
+
+    #container-img-eye-reg{
+        top: 50%;
+        right: 15%;
+        font-size: 100%;
+    }
+
+    #container-message-reg, #message-login-redirect, #link-login-redirect{
+        font-size: 70%;
+    }
+}
